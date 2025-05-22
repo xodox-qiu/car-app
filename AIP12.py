@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from sklearn.linear_model import LinearRegression
 
-model = pickle.load(open('Data/model_prediksi_harga_mobil.sav', 'rb'))
+model = LinearRegression()
+pickle.dump(model, open('model_prediksi_harga_mobil.sav', 'wb'))
 
 st.title("Prediksi Harga Mobil")
 
