@@ -5,7 +5,7 @@ import pickle
 from sklearn.linear_model import LinearRegression
 
 model = LinearRegression()
-pickle.dump(model, open('model_prediksi_harga_mobil.sav', 'wb'))
+pickle.dump(model, open('Data/model_prediksi_harga_mobil.sav', 'wb'))
 
 st.title("Prediksi Harga Mobil")
 
